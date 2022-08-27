@@ -1,15 +1,17 @@
 I have created a Soft Delete manager in this Laravel application, so when we whenever we delete any data record from or within our web application, then that data is not completely deleted from database. The most intresting part is we will not be able to see that deleted data on our web application front-end side and at back-end. with softdelete manager, we can again recover and display that deleted data record in our application. So this things we will briefly discussed under this repo by taking practical example on how soft delete work in Laravel8 crud application. please not that this file is not a complete laravel app, because of github space i only documented the important files for soft Delete manager.
 
-##How it works:
+#How it works.
 Suppose we have used Soft delete class in Laravel web application, so when we have remove data from our application then that data is not completetly removed from Mysql Database table. But current timestamp time has been updated at the deleted_at column. And when we restore that deleted data then current timestamp value will be updated with nulled in deleted_at table column.
 
 Please follow below step for how to implement soft delete in Laravel application for restore deleted records.
 
-##1. Install laravel framework
+#1. Install laravel framework.
+
  Go to command prompt and run following command.
  composer create-project --prefer-dist laravel/laravel app_name
 
-##2. Make Database Connection
+##2. Make Database Connection.
+
 After download latest version of Laravel framework, first we need to make database connection. So for make database connection in Laravel application, we have to open .env file "environment variabel" and under that file, we have to define our MySQL database configuration details.
 DB_CONNECTION=mysql
 DB_HOST=localhost
