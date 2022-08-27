@@ -9,11 +9,11 @@ class PostController extends Controller
 {
     public function index(Request $request)
     {
-      $delete = Post::get();
+      $post = Post::get();
       if ($request->has('view_deleted')) {
-           $delete = Post::onlyTrashed()->get();
+           $post = Post::onlyTrashed()->get();
       }
-      return view('delete.record',compact('delete'));
+      return view('delete.record',compact('post'));
     }
     public function delete($id)
     {

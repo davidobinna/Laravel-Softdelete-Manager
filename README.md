@@ -72,3 +72,16 @@ app/Http/Controllers/PostController.php: go to file.
 #6. Create View Blade File
 In Laravel framework for you to display output on browser you need to create a blade template file for displaying data on web pages. In this example i have created a blade file resources/views/post.blade.php directory: Go to file.
 
+#7. Set Route
+Now you need to define your routes for PostController.php actions. So to setup the web route, go to open routes/web.php file: add the code on the Route file i have created.
+
+Note:
+contact me for any assistant if you find any difficulties. 
+
+#8. Run Laravel Application
+You have to start the laravel app development server by running th efollowing command
+
+php artisan serve
+
+This command will start the server and provide you with a url of the Laravel application. So to check the output of the entire code, you have to visit the following url on your browser.
+http://127.0.0.1:8000/post

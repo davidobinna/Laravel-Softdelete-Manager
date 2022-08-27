@@ -44,8 +44,8 @@
            </tr>
          </thead>
          <tbody>
-           @if(count($delete) > 0)
-             @foreach($delete as $row)
+           @if(count($post) > 0)
+             @foreach($post as $row)
              <tr>
                <td>{{ $row->id }}</td>
                <td>{{ $row->name }}</td>
